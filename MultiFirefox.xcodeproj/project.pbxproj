@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		166138F51F645C3B0003F32A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166138F41F645C3B0003F32A /* CoreFoundation.framework */; };
+		166138F71F645C410003F32A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166138F61F645C410003F32A /* Cocoa.framework */; };
 		16C8409A1F643FB60009298E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C840991F643FB60009298E /* AppDelegate.swift */; };
 		16C8409C1F643FB60009298E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8409B1F643FB60009298E /* ViewController.swift */; };
 		16C8409E1F643FB60009298E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8409D1F643FB60009298E /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		166138F41F645C3B0003F32A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		166138F61F645C410003F32A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		16C840961F643FB60009298E /* MultiFirefox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiFirefox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C840991F643FB60009298E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C8409B1F643FB60009298E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166138F71F645C410003F32A /* Cocoa.framework in Frameworks */,
+				166138F51F645C3B0003F32A /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166138F31F645C3B0003F32A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				166138F61F645C410003F32A /* Cocoa.framework */,
+				166138F41F645C3B0003F32A /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		16C8408D1F643FB60009298E = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +95,7 @@
 				16C840AA1F643FB60009298E /* MultiFirefoxTests */,
 				16C840B51F643FB60009298E /* MultiFirefoxUITests */,
 				16C840971F643FB60009298E /* Products */,
+				166138F31F645C3B0003F32A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -395,7 +411,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MHVZ9RR2WQ;
 				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefox;
@@ -411,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MHVZ9RR2WQ;
 				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefox;
