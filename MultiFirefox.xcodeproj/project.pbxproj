@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16C8409A1F643FB60009298E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C840991F643FB60009298E /* AppDelegate.swift */; };
+		16C8409C1F643FB60009298E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8409B1F643FB60009298E /* ViewController.swift */; };
+		16C8409E1F643FB60009298E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8409D1F643FB60009298E /* Assets.xcassets */; };
+		16C840AC1F643FB60009298E /* MultiFirefoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C840AB1F643FB60009298E /* MultiFirefoxTests.swift */; };
+		16C840B71F643FB60009298E /* MultiFirefoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C840B61F643FB60009298E /* MultiFirefoxUITests.swift */; };
+		16C840C51F6440700009298E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16C840C41F6440700009298E /* Info.plist */; };
+		16C840C71F6442D20009298E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C840C61F6442D20009298E /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16C840A81F643FB60009298E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C8408E1F643FB60009298E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C840951F643FB60009298E;
+			remoteInfo = MultiFirefox;
+		};
+		16C840B31F643FB60009298E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C8408E1F643FB60009298E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C840951F643FB60009298E;
+			remoteInfo = MultiFirefox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16C840961F643FB60009298E /* MultiFirefox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiFirefox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C840991F643FB60009298E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16C8409B1F643FB60009298E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16C8409D1F643FB60009298E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C840A71F643FB60009298E /* MultiFirefoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiFirefoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C840AB1F643FB60009298E /* MultiFirefoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiFirefoxTests.swift; sourceTree = "<group>"; };
+		16C840AD1F643FB60009298E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C840B21F643FB60009298E /* MultiFirefoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiFirefoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C840B61F643FB60009298E /* MultiFirefoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiFirefoxUITests.swift; sourceTree = "<group>"; };
+		16C840B81F643FB60009298E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C840C41F6440700009298E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C840C61F6442D20009298E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C840931F643FB60009298E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C840A41F643FB60009298E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C840AF1F643FB60009298E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C8408D1F643FB60009298E = {
+			isa = PBXGroup;
+			children = (
+				16C840981F643FB60009298E /* MultiFirefox */,
+				16C840AA1F643FB60009298E /* MultiFirefoxTests */,
+				16C840B51F643FB60009298E /* MultiFirefoxUITests */,
+				16C840971F643FB60009298E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16C840971F643FB60009298E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C840961F643FB60009298E /* MultiFirefox.app */,
+				16C840A71F643FB60009298E /* MultiFirefoxTests.xctest */,
+				16C840B21F643FB60009298E /* MultiFirefoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C840981F643FB60009298E /* MultiFirefox */ = {
+			isa = PBXGroup;
+			children = (
+				16C840C61F6442D20009298E /* Main.storyboard */,
+				16C840991F643FB60009298E /* AppDelegate.swift */,
+				16C8409B1F643FB60009298E /* ViewController.swift */,
+				16C8409D1F643FB60009298E /* Assets.xcassets */,
+				16C840C41F6440700009298E /* Info.plist */,
+			);
+			path = MultiFirefox;
+			sourceTree = "<group>";
+		};
+		16C840AA1F643FB60009298E /* MultiFirefoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				16C840AB1F643FB60009298E /* MultiFirefoxTests.swift */,
+				16C840AD1F643FB60009298E /* Info.plist */,
+			);
+			path = MultiFirefoxTests;
+			sourceTree = "<group>";
+		};
+		16C840B51F643FB60009298E /* MultiFirefoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16C840B61F643FB60009298E /* MultiFirefoxUITests.swift */,
+				16C840B81F643FB60009298E /* Info.plist */,
+			);
+			path = MultiFirefoxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C840951F643FB60009298E /* MultiFirefox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C840BB1F643FB60009298E /* Build configuration list for PBXNativeTarget "MultiFirefox" */;
+			buildPhases = (
+				16C840921F643FB60009298E /* Sources */,
+				16C840931F643FB60009298E /* Frameworks */,
+				16C840941F643FB60009298E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiFirefox;
+			productName = MultiFirefox;
+			productReference = 16C840961F643FB60009298E /* MultiFirefox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16C840A61F643FB60009298E /* MultiFirefoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C840BE1F643FB60009298E /* Build configuration list for PBXNativeTarget "MultiFirefoxTests" */;
+			buildPhases = (
+				16C840A31F643FB60009298E /* Sources */,
+				16C840A41F643FB60009298E /* Frameworks */,
+				16C840A51F643FB60009298E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C840A91F643FB60009298E /* PBXTargetDependency */,
+			);
+			name = MultiFirefoxTests;
+			productName = MultiFirefoxTests;
+			productReference = 16C840A71F643FB60009298E /* MultiFirefoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16C840B11F643FB60009298E /* MultiFirefoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C840C11F643FB60009298E /* Build configuration list for PBXNativeTarget "MultiFirefoxUITests" */;
+			buildPhases = (
+				16C840AE1F643FB60009298E /* Sources */,
+				16C840AF1F643FB60009298E /* Frameworks */,
+				16C840B01F643FB60009298E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C840B41F643FB60009298E /* PBXTargetDependency */,
+			);
+			name = MultiFirefoxUITests;
+			productName = MultiFirefoxUITests;
+			productReference = 16C840B21F643FB60009298E /* MultiFirefoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C8408E1F643FB60009298E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sang Han";
+				TargetAttributes = {
+					16C840951F643FB60009298E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MHVZ9RR2WQ;
+						ProvisioningStyle = Automatic;
+					};
+					16C840A61F643FB60009298E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MHVZ9RR2WQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16C840951F643FB60009298E;
+					};
+					16C840B11F643FB60009298E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MHVZ9RR2WQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16C840951F643FB60009298E;
+					};
+				};
+			};
+			buildConfigurationList = 16C840911F643FB60009298E /* Build configuration list for PBXProject "MultiFirefox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C8408D1F643FB60009298E;
+			productRefGroup = 16C840971F643FB60009298E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C840951F643FB60009298E /* MultiFirefox */,
+				16C840A61F643FB60009298E /* MultiFirefoxTests */,
+				16C840B11F643FB60009298E /* MultiFirefoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C840941F643FB60009298E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C840C71F6442D20009298E /* Main.storyboard in Resources */,
+				16C8409E1F643FB60009298E /* Assets.xcassets in Resources */,
+				16C840C51F6440700009298E /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C840A51F643FB60009298E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C840B01F643FB60009298E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C840921F643FB60009298E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C8409C1F643FB60009298E /* ViewController.swift in Sources */,
+				16C8409A1F643FB60009298E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C840A31F643FB60009298E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C840AC1F643FB60009298E /* MultiFirefoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C840AE1F643FB60009298E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C840B71F643FB60009298E /* MultiFirefoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16C840A91F643FB60009298E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C840951F643FB60009298E /* MultiFirefox */;
+			targetProxy = 16C840A81F643FB60009298E /* PBXContainerItemProxy */;
+		};
+		16C840B41F643FB60009298E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C840951F643FB60009298E /* MultiFirefox */;
+			targetProxy = 16C840B31F643FB60009298E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16C840B91F643FB60009298E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16C840BA1F643FB60009298E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: Sang Han (5GAEHV3G7N)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		16C840BC1F643FB60009298E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		16C840BD1F643FB60009298E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		16C840BF1F643FB60009298E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MHVZ9RR2WQ;
+				INFOPLIST_FILE = MultiFirefoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiFirefox.app/Contents/MacOS/MultiFirefox";
+			};
+			name = Debug;
+		};
+		16C840C01F643FB60009298E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MHVZ9RR2WQ;
+				INFOPLIST_FILE = MultiFirefoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiFirefox.app/Contents/MacOS/MultiFirefox";
+			};
+			name = Release;
+		};
+		16C840C21F643FB60009298E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MHVZ9RR2WQ;
+				INFOPLIST_FILE = MultiFirefoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MultiFirefox;
+			};
+			name = Debug;
+		};
+		16C840C31F643FB60009298E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MHVZ9RR2WQ;
+				INFOPLIST_FILE = MultiFirefoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghan.MultiFirefoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MultiFirefox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C840911F643FB60009298E /* Build configuration list for PBXProject "MultiFirefox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C840B91F643FB60009298E /* Debug */,
+				16C840BA1F643FB60009298E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C840BB1F643FB60009298E /* Build configuration list for PBXNativeTarget "MultiFirefox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C840BC1F643FB60009298E /* Debug */,
+				16C840BD1F643FB60009298E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C840BE1F643FB60009298E /* Build configuration list for PBXNativeTarget "MultiFirefoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C840BF1F643FB60009298E /* Debug */,
+				16C840C01F643FB60009298E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C840C11F643FB60009298E /* Build configuration list for PBXNativeTarget "MultiFirefoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C840C21F643FB60009298E /* Debug */,
+				16C840C31F643FB60009298E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C8408E1F643FB60009298E /* Project object */;
+}
