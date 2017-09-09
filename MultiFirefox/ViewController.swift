@@ -86,12 +86,14 @@ class ViewController: NSViewController {
 extension ViewController {
     
     func contentsOf(folder: URL) -> [URL] {
+
         let fileManager = FileManager.default
+
         do {
             let contents = try fileManager.contentsOfDirectory(atPath: folder.path)
             let urls = contents
-                .filter { return showInvisibles ? true : $0.characters.first != "." }
                 .map { return folder.appendingPathComponent($0) }
+                .filter { return $0.lastPathComponent.hasPrefix("Firefox") }
             return urls
         } catch {
             return []
@@ -99,6 +101,7 @@ extension ViewController {
     }
     
     func infoAbout(url: URL) -> String {
+
         let fileManager = FileManager.default
         
         do {
@@ -110,14 +113,18 @@ extension ViewController {
                 if key.rawValue == "NSFileExtendedAttributes" { continue }
                 report.append("\(key.rawValue):\t \(value)")
             }
+
             return report.joined(separator: "\n")
+
         } catch {
             return "No information available for \(url.path)"
         }
     }
     
     func formatInfoText(_ text: String) -> NSAttributedString {
+
         let paragraphStyle = NSMutableParagraphStyle.default().mutableCopy() as? NSMutableParagraphStyle
+
         paragraphStyle?.minimumLineHeight = 24
         paragraphStyle?.alignment = .left
         paragraphStyle?.tabStops = [ NSTextTab(type: .leftTabStopType, location: 240) ]
@@ -155,10 +162,9 @@ extension ViewController {
     }
     
     @IBAction func toggleShowInvisibles(_ sender: NSButton) {
-        // 1
+
         showInvisibles = (sender.state == NSOnState)
-        
-        // 2
+
         if let selectedFolder = selectedFolder {
             filesList = contentsOf(folder: selectedFolder)
             selectedItem = nil
@@ -167,18 +173,17 @@ extension ViewController {
     }
     
     @IBAction func tableViewDoubleClicked(_ sender: Any) {
-        // 1
+
         if tableView.selectedRow < 0 { return }
         
-        // 2
         let selectedItem = filesList[tableView.selectedRow]
-        // 3
         if selectedItem.hasDirectoryPath {
             selectedFolder = selectedItem
         }
     }
     
     @IBAction func moveUpClicked(_ sender: Any) {
+
         if selectedFolder?.path == "/" { return }
         selectedFolder = selectedFolder?.deletingLastPathComponent()
     }
@@ -228,8 +233,10 @@ extension ViewController: NSTableViewDataSource {
 
 extension ViewController: NSTableViewDelegate {
     
-    func tableView(_ tableView: NSTableView, viewFor
-        tableColumn: NSTableColumn?, row: Int) -> NSView? {
+    func tableView(_ tableView: NSTableView,
+                   viewFor tableColumn: NSTableColumn?,
+                   row: Int) -> NSView? {
+
         let item = filesList[row]
         
         let fileIcon = NSWorkspace.shared().icon(forFile: item.path)
@@ -240,17 +247,16 @@ extension ViewController: NSTableViewDelegate {
             cell.imageView?.image = fileIcon
             return cell
         }
-        
-        // 5
         return nil
     }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
+
         if tableView.selectedRow < 0 {
             selectedItem = nil
             return
         }
-        
+
         selectedItem = filesList[tableView.selectedRow]
     }
     
@@ -272,7 +278,7 @@ extension ViewController {
     
     func restoreCurrentSelections() {
         guard let dataFileUrl = urlForDataStorage() else { return }
-        
+
         do {
             let storedData = try String(contentsOf: dataFileUrl)
             let storedDataComponents = storedData.components(separatedBy: .newlines)
@@ -305,23 +311,16 @@ extension ViewController {
     }
     
     private func urlForDataStorage() -> URL? {
-        // 1
         let fileManager = FileManager.default
         
-        // 2
         guard let folder = fileManager.urls(for: .applicationSupportDirectory,
-                                            in: .userDomainMask).first else {
-                                                return nil
-        }
-        
-        // 3
+                                            in: .userDomainMask).first else { return nil }
         let appFolder = folder.appendingPathComponent("MultiFirefox")
         var isDirectory: ObjCBool = false
         let folderExists = fileManager.fileExists(atPath: appFolder.path,
                                                   isDirectory: &isDirectory)
         if !folderExists || !isDirectory.boolValue {
             do {
-                // 4
                 try fileManager.createDirectory(at: appFolder,
                                                 withIntermediateDirectories: true,
                                                 attributes: nil)
@@ -329,8 +328,7 @@ extension ViewController {
                 return nil
             }
         }
-        
-        // 5
+
         let dataFileUrl = appFolder.appendingPathComponent("StoredState.txt")
         return dataFileUrl
     }
